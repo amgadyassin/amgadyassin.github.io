@@ -1,2 +1,2 @@
 # amgadyassin.github.io
-Personal portfolio — Data Analyst | SQL · Python · Power BI · Fabric
+Personal portfolio — Business Data Analyst | SQL · Python · Power BI · Fabric
