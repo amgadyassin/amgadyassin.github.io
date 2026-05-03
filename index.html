@@ -27,7 +27,18 @@
             --border-hover: rgba(255,255,255,0.15);
             --transition: all 0.3s ease;
         }
-
+        body.light-mode {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f6f8fa;
+            --bg-card: #ffffff;
+            --accent: #0077b6;
+            --accent-hover: #03045e;
+            --text-primary: #24292f;
+            --text-muted: #57606a;
+            --text-faint: #6e7781;
+            --border: rgba(0,0,0,0.1);
+            --border-hover: rgba(0,0,0,0.2);
+        }
         * {
             margin: 0;
             padding: 0;
@@ -766,6 +777,9 @@
                 <a href="#projects">Projects</a>
                 <a href="#certifications">Certifications</a>
                 <a href="#contact">Contact</a>
+                <button id="theme-toggle" aria-label="Toggle light/dark theme" style="background: none; border: none; color: var(--text-primary); cursor: pointer; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                <i data-lucide="sun" id="theme-icon" style="width: 20px; height: 20px;"></i>
+            </button>
             </div>
             <button class="hamburger" aria-label="Menu">
                 <i data-lucide="menu"></i>
@@ -1344,6 +1358,20 @@
         if (statsSection) {
             counterObserver.observe(statsSection);
         }
+    const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            
+            if (body.classList.contains('light-mode')) {
+                themeIcon.setAttribute('data-lucide', 'moon');
+            } else {
+                themeIcon.setAttribute('data-lucide', 'sun');
+            }
+            lucide.createIcons(); 
+        });
     </script>
 </body>
 </html>
