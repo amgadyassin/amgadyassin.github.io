@@ -221,6 +221,12 @@
             gap: 2rem;
         }
 
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
         .nav-links a {
             color: var(--text-muted);
             font-size: 0.9rem;
@@ -777,13 +783,15 @@
                 <a href="#projects">Projects</a>
                 <a href="#certifications">Certifications</a>
                 <a href="#contact">Contact</a>
-                <button id="theme-toggle" aria-label="Toggle light/dark theme" style="background: none; border: none; color: var(--text-primary); cursor: pointer; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
-                <i data-lucide="sun" id="theme-icon" style="width: 20px; height: 20px;"></i>
-            </button>
             </div>
-            <button class="hamburger" aria-label="Menu">
-                <i data-lucide="menu"></i>
-            </button>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle light/dark theme" style="background: none; border: none; color: var(--text-primary); cursor: pointer; display: flex; align-items: center; justify-content: center;">
+                    <i data-lucide="sun" id="theme-icon" style="width: 20px; height: 20px;"></i>
+                </button>
+                <button class="hamburger" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
