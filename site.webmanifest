@@ -1,0 +1,17 @@
+{
+  "name": "Amgad Yassin — Senior Data Analyst & Analytics Engineer",
+  "short_name": "Amgad Yassin",
+  "description": "Executive portfolio of Amgad Yassin, Senior Data Analyst specializing in Microsoft Fabric, Power BI, and Cloud Analytics Modernization.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090d12",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

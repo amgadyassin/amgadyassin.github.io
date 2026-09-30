@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e141d" />
+      <stop offset="100%" stop-color="#090d12" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Tile -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bgGrad)" stroke="#10b981" stroke-width="2.5" stroke-opacity="0.6" />
+
+  <!-- Initials 'A' and 'Y' -->
+  <g font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="800" font-size="28" letter-spacing="-1">
+    <!-- Letter A -->
+    <text x="12" y="42" fill="#ffffff">A</text>
+    
+    <!-- Central Connector Data Dot -->
+    <circle cx="32" cy="34" r="3" fill="#10b981" filter="url(#glow)" />
+    
+    <!-- Letter Y -->
+    <text x="36" y="42" fill="url(#emeraldGrad)">Y</text>
+  </g>
+</svg>

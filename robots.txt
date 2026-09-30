@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amgadyassin.github.io/sitemap.xml
