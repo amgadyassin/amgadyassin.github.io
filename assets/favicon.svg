@@ -9,23 +9,30 @@
       <stop offset="100%" stop-color="#059669" />
     </linearGradient>
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
-  <!-- Background Tile -->
-  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bgGrad)" stroke="#10b981" stroke-width="2.5" stroke-opacity="0.6" />
+  <!-- Background Glass Tile -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bgGrad)" stroke="#10b981" stroke-width="2.2" stroke-opacity="0.65" />
 
-  <!-- Initials 'A' and 'Y' -->
-  <g font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="800" font-size="28" letter-spacing="-1">
-    <!-- Letter A -->
-    <text x="12" y="42" fill="#ffffff">A</text>
-    
-    <!-- Central Connector Data Dot -->
-    <circle cx="32" cy="34" r="3" fill="#10b981" filter="url(#glow)" />
-    
-    <!-- Letter Y -->
-    <text x="36" y="42" fill="url(#emeraldGrad)">Y</text>
-  </g>
+  <!-- Letter A (Vector Path - Precision Spacing) -->
+  <path d="M 9.5 43.5 L 17 20 L 24.5 43.5 M 12.5 35 L 21.5 35" 
+        stroke="#ffffff" 
+        stroke-width="3.8" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none" />
+
+  <!-- Central Data Node / Connector Dot -->
+  <circle cx="32" cy="33.5" r="2.8" fill="#10b981" filter="url(#glow)" />
+
+  <!-- Letter Y (Vector Path - Precision Spacing) -->
+  <path d="M 39.5 20 L 47 32 L 54.5 20 M 47 32 L 47 43.5" 
+        stroke="url(#emeraldGrad)" 
+        stroke-width="3.8" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none" />
 </svg>
